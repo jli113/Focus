@@ -1,0 +1,24 @@
+{
+  "name": "NameRemover",
+  "manifest_version": 2,
+  "version": "1.0.0",
+  "description": "Remove names of celebrities or stars",
+  "icons":
+  {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+  },
+  "browser_action": 
+  {
+    "default_icon": "icon.png"
+  },
+  "content_scripts": 
+  [
+      {
+        //"matches": ["<all_urls>"],   
+        "matches": ["https://www.baidu.com/*","http://top.baidu.com/*"],      
+        "js": ["myscript.js"]
+      }
+  ]
+}
